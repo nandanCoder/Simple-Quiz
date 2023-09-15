@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+    font-family: "Jost", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.card {
+    width: 100%;
+    max-width: 540px;
+    background-color: #ffff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.card .title {
+    padding: 3px  1px 20px 1px;
+    border-bottom: 2px solid #002765;
+    position: relative;
+}
+.card .title h1{
+    color: #002765;
+    display: inline;
+}
+.card .title #timer{
+    position: absolute;
+    top: 1px;
+    right: 23px;
+    font-size: 34px;
+    color:#002765 ;
+    font-weight: bold;
+}
+.card .question{
+    margin: 8px auto 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #002765;
+}
+.card .ans {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 1px 1px 10px 1px;
+}
+.card .ans button{
+    height: 43px;
+    background: transparent;
+    padding: 2px 8px 2px 15px;
+    text-align: start;
+    cursor: pointer;
+    border: 1.5px solid #002765;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.card .ans button:hover:not([disabled]){
+    background-color: #222;
+    color: #fff;
+}
+.card .ans button:disabled{
+    cursor: no-drop;
+}
+.card .btn{
+    text-align: center;
+    margin-top: 33px;
+    display: none;
+}
+.card .btn #next {
+    text-align: center;
+    height: 43px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: #001e4d;
+}
+/* .card .btn .hi {
+    background-color: aquamarine;
+} */
+.correct{
+    background: #9aeabc;
+}
+/* .incorrect{
+    background: #ff9393;
+}  */
